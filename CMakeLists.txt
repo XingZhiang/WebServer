@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(webserver)
+add_definitions("-Wall -std=c++14")
+file(GLOB SOURCE "./*.cpp")
+add_executable(webserver $(SOURCE))
