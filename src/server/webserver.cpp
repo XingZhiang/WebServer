@@ -9,8 +9,8 @@
 
 using  boost::asio::ip::tcp;
 
-WebServer::WebServer(boost::asio::io_context& context, uint64_t port)
-:_context(context),_port(port){
+WebServer::WebServer(boost::asio::io_context& context, Config& config)
+:_context(context),_port(config.port){
     _ep = tcp::endpoint(tcp::v4(), _port);
 }
 
