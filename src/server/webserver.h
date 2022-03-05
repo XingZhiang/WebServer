@@ -24,6 +24,8 @@ private:
     boost::asio::io_context&  _context;
     uint64_t _port; // 端口号
     boost::asio::ip::tcp::endpoint _ep; // 端点
+//     std::unordered_map<uint64_t, HttpConn> _users;
+
 };
 
 #endif // WEBSERVER_H
